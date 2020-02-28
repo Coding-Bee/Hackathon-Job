@@ -16,6 +16,8 @@ app.set("view engine", "ejs");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
+require('./app/routes.js')(app);
+
 
 
 app.listen(3000, ()=> console.log(`Server started at ${port}`));
