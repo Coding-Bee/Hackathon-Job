@@ -7,6 +7,7 @@ var flash       = require('connect-flash');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var methodOverride = require('method-override');
+mongoose.connect('mongodb://localhost/jobs', {useNewUrlParser: true, useUnifiedTopology: true });
 var configDB = require('./config/databse.js');
 mongoose.connect(configDB.url, {
     useNewUrlParser: true,
