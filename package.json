@@ -9,10 +9,17 @@
   "author": "Error404",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
     "childprocess": "^2.0.2",
+=======
+    "connect-flash": "^0.1.1",
+>>>>>>> 3a7081b98d3ffdc95c70a350ed8d36f4937ec9c8
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
     "mongoose": "^5.9.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
