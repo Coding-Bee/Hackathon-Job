@@ -11,7 +11,11 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
+    "childprocess": "^2.0.2",
+=======
     "connect-flash": "^0.1.1",
+>>>>>>> 3a7081b98d3ffdc95c70a350ed8d36f4937ec9c8
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
