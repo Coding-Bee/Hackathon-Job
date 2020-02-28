@@ -6,18 +6,10 @@ var companySchema = mongoose.Schema({
         username : String,
         password : String,
     },
-    facebook: {
-        id           : String,
-        token        : String,
-        name         : String,
-        email        : String
-    },
-    google: {
-        id           : String,
-        token        : String,
-        email        : String,
-        name         : String
-    }
+    companyName: String,
+    Position: String,
+    requirements: String,
+    description: String
 });
 
 userSchema.methods.generateHash = function(password) {

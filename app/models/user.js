@@ -5,7 +5,21 @@ var userSchema = mongoose.Schema({
     local: {
         username : String,
         password : String,
-    }
+    },
+    age: Number,
+    location: String,
+    phoneNo: String,
+    skills: [String],
+    suggestedjobs: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Suggested Jobs"
+    }],
+    appliedjobs: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Applied Jobs",
+        status: String
+    }]
+
 });
 
 userSchema.methods.generateHash = function(password) {
