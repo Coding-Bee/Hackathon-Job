@@ -9,5 +9,8 @@ module.exports = (app) => {
     app.get('/company', (req, res) =>{
         res.render('company');
     })
+    app.get('/notification',(req,res)=>{
+        res.render('notification');
+    })
     
 }
