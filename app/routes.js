@@ -21,6 +21,9 @@ module.exports = (app, passport) => {
      app.get("/login", function(req, res) {
         res.render("login", {message: req.flash('loginMessage')});
     });
+    app.get('/appliedjobs', (req, res) =>{
+        res.render('appliedjobs');
+    })
 
     //To handle the post request from login page 
     app.post('/login', passport.authenticate('local-login', {
